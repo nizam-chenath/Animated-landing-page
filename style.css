@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-item: center;
+  background: #000;
+}
+
+#bg {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 0), linear-gradient(180deg, rgba(255, 255, 255, 0.5) 1px, transparent 0);
+  background-size: 5vw 5vw;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#top-box {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#logo {
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  font-family: Julietta Messie;
+  color: #fff;
+  font-size: 2.5em;
+  -webkit-transform: rotate(-10deg) translate(-50%);
+          transform: rotate(-10deg) translate(-50%);
+}
+
+#menu {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 10px;
+}
+
+#menu1 {
+  position: absolute;
+  top: 350px;
+  left: 5vw;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#menu2 {
+  position: absolute;
+  top: 350px;
+  right: 5vw;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#menu3 {
+  position: absolute;
+  bottom: 5vw;
+  left: 46%;
+}
+
+#word {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  font-family: serif;
+  font-size: 20px;
+  color: grey;
+}
+
+#word::before {
+  content: '';
+  background-image: url(download.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 450px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: anime1 4s ease-in-out infinite;
+          animation: anime1 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes anime1 {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 70px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes anime1 {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 70px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+span {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+#card {
+  height: 500px;
+  width: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+#card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: anime2 0.5s linear forwards;
+          animation: anime2 0.5s linear forwards;
+}
+
+@-webkit-keyframes anime2 {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes anime2 {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
